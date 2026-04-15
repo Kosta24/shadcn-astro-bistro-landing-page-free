@@ -4,7 +4,6 @@ import HeroSectionPage from '@/components/blocks/hero-section/hero-section'
 import PopularDishes from '@/components/blocks/popular-dishes/popular-dishes'
 import AboutUs from '@/components/blocks/about-us-section/about-us-page'
 import Testimonials from '@/components/blocks/testimonials-section/testimonials-section'
-import NewItems from '@/components/blocks/new-items-section/new-items'
 import ContactUs from '@/components/blocks/contact-us-section/contact-us-page'
 import Offers from '@/components/blocks/offers-section/offers-section'
 
@@ -12,7 +11,6 @@ import { menudata } from '@/assets/data/hero'
 import { popularDishes } from '@/assets/data/popular-dishes'
 import { stats } from '@/assets/data/about-us'
 import { testimonials } from '@/assets/data/testimonials'
-import { newItems } from '@/assets/data/new-items'
 import { contactInfo } from '@/assets/data/contact-us'
 import { GalleryImage } from '@/assets/data/offers'
 
@@ -44,10 +42,11 @@ const schema = {
 
 <Layout title={pageTitle} description={pageDescription} keywords={pageKeywords} schema={schema}>
   <HeroSectionPage menudata={menudata} client:load />
-  <PopularDishes popularDishes={popularDishes} client:load />
   <AboutUs stats={stats} />
+  <PopularDishes popularDishes={popularDishes} client:load />
+
   <Testimonials testimonials={testimonials} client:load />
-  <NewItems newItems={newItems} />
+
   <ContactUs contactInfo={contactInfo} />
   <Offers galleryImage={GalleryImage} />
 </Layout>

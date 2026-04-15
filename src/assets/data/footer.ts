@@ -1,18 +1,18 @@
 export const footerData = [
   {
-    title: 'About Us',
+    title: 'Azienda',
     href: '#about-us'
   },
   {
-    title: 'Testimonials',
+    title: 'Insegne',
     href: '#testimonials'
   },
   {
-    title: 'Contact Us',
+    title: 'Contatti',
     href: '#contact-us'
   },
   {
-    title: 'Offers',
+    title: 'Offerte',
     href: '#offers'
   }
 ]

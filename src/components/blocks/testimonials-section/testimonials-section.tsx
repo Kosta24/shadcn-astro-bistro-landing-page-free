@@ -1,8 +1,5 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import { Rating } from '@/components/ui/rating'
 
 export type TestimonialItem = {
   name: string
@@ -31,16 +28,16 @@ const TestimonialsComponent = ({ testimonials }: TestimonialsComponentProps) => 
         {/* Left Content */}
         <div className='space-y-4 sm:w-1/2 lg:w-1/3'>
           <Badge variant='outline' className='text-sm font-normal'>
-            Testimonials
+            Insegne
           </Badge>
 
           <h2 className='text-2xl font-semibold sm:text-3xl lg:text-4xl'>
-            Customers <br />
-            Feedback
+            Le Nostre <br />
+            Insegne
           </h2>
 
           <p className='text-muted-foreground text-xl'>
-            Here&apos;s how our customers enjoyed our restaurant and the services we offer.
+            I marchi e i partner che rappresentano la qualità dei nostri prodotti marittimi.
           </p>
 
           <div className='flex items-center gap-4'>
@@ -60,28 +57,12 @@ const TestimonialsComponent = ({ testimonials }: TestimonialsComponentProps) => 
           <CarouselContent className='sm:-ml-6'>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className='sm:pl-6 lg:basis-1/2'>
-                <Card className='hover:border-primary h-full rounded-none transition-colors duration-300'>
-                  <CardContent className='space-y-5'>
-                    <div className='flex items-center gap-3'>
-                      <Avatar className='size-10 rounded-full'>
-                        <AvatarImage src={testimonial.avatar} alt={testimonial.name} loading='lazy' />
-                        <AvatarFallback className='rounded-full text-sm'>
-                          {testimonial.name
-                            .split(' ', 2)
-                            .map(n => n[0])
-                            .join('')}
-                        </AvatarFallback>
-                      </Avatar>
-
-                      <div className='flex-1'>
-                        <h4 className='font-medium'>{testimonial.name}</h4>
-                      </div>
-                    </div>
-
-                    <Rating readOnly variant='yellow' size={24} value={testimonial.rating} precision={0.5} />
-                    <p>{testimonial.content}</p>
-                  </CardContent>
-                </Card>
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.name}
+                  loading='lazy'
+                  className='h-auto w-full rounded-none object-cover'
+                />
               </CarouselItem>
             ))}
           </CarouselContent>

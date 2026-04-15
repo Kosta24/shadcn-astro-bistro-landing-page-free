@@ -1,30 +1,34 @@
 export const popularDishes = [
   {
-    image: '/images/popular-dishes/grilled-herb-chicken.webp',
+    image: '/images/popular-dishes/pesce.jpg',
     alt: 'Grilled Herb Chicken',
-    name: 'Grilled Herb Chicken',
-    type: 'Main course 🥘',
-    description: 'Juicy chicken grilled with herbs and served with garlic sauce.'
+    name: 'Pesci vari',
+    type: '',
+    description:
+      'Salmone, sogliole, rombi, aragoste e granchi sono alcuni fra i pesci che troverete in questa categoria. Pesci perfetti per piatti importanti e di successo.'
   },
   {
-    image: '/images/popular-dishes/classic-margherita-pizza.webp',
+    image: '/images/popular-dishes/gamberi.jpg',
     alt: 'Classic Margherita Pizza',
-    name: 'Classic Margherita Pizza',
-    type: 'Main course 🍕',
-    description: 'Crispy crust, fresh mozzarella, and basil a true classic.'
+    name: 'Gamberi',
+    type: '',
+    description:
+      'Un’ampia selezione dei migliori gamberi, gamberetti, mazzancolle. Disponibili sia interi che lavorati, pronti per essere impiegati nei piatti più ricercati.'
   },
   {
-    image: '/images/popular-dishes/spicy-shrimp-linguine.webp',
+    image: '/images/popular-dishes/molluschi.jpg',
     alt: 'Spicy Shrimp Linguine',
-    name: 'Spicy Shrimp Linguine',
-    type: 'Main course 🥘',
-    description: 'Shrimp, chili, and creamy tomato sauce tossed to perfection.'
+    name: 'Molluschi',
+    type: '',
+    description:
+      'Molluschi bivalvi disponibili secondo varie grandezze e lavorazioni: interi, mezzo guscio, sgusciati, già puliti o al naturale.'
   },
   {
-    image: '/images/popular-dishes/chocolate-lava-cake.webp',
+    image: '/images/popular-dishes/calamari.webp',
     alt: 'Chocolate Lava Cake',
-    name: 'Chocolate Lava Cake',
-    type: 'Desert 🍫',
-    description: 'Warm molten cake with a scoop of vanilla ice cream.'
+    name: 'Calamari',
+    type: '',
+    description:
+      'Calamari scelti, controllati, preservati, divisi in varie pezzature per garantirti qualità e sicurezza.'
   }
 ]

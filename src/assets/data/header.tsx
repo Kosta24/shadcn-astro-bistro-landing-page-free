@@ -2,19 +2,19 @@ import type { NavigationSection } from '@/components/blocks/menu-navigation'
 
 export const navigationData: NavigationSection[] = [
   {
-    title: 'About Us',
+    title: 'Azienda',
     href: '#about-us'
   },
   {
-    title: 'Testimonials',
+    title: 'Insegne',
     href: '#testimonials'
   },
   {
-    title: 'Contact Us',
+    title: 'Contatti',
     href: '#contact-us'
   },
   {
-    title: 'Offers',
+    title: 'Offerte',
     href: '#offers'
   }
 ]

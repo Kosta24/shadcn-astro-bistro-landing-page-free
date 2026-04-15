@@ -48,11 +48,12 @@ const Footer = () => {
 
       <div className='mx-auto flex max-w-7xl justify-center px-4 py-8 sm:px-6'>
         <p className='text-muted-foreground text-center text-balance'>
-          {`©${new Date().getFullYear()}`}{' '}
+          Copyright&nbsp;
+          {`©${2014/*new Date().getFullYear()*/}`} |
           <a href='/#home' className='hover:underline'>
-            Bistro
+            &nbsp; Maxidi S.r.l.
           </a>
-          , Made with ❤️ for better web.
+          – P.IVA 00542090238 | v.4.19.558
         </p>
       </div>
     </footer>

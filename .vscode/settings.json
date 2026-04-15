@@ -114,6 +114,7 @@
     "@": "${workspaceFolder}/src"
   },
   // Code Spell Checker Settings
+  "cSpell.enabled": false,
   "cSpell.words": [
     "Astro",
     "astro",
